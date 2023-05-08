@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-color: aliceblue;
+    margin-top: 90px;
+    animation: slide 5s 0.7s infinite ease-in-out;
+}
+
+h1{
+
+    color: whitesmoke;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+section{
+    width: 99vmin;
+    height: 63vmin;
+    display: flex;
+    align-items: center;
+    flex-flow: column ;
+    margin:20px;
+    padding: 6px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2e2a2a ;
+    border-radius: 40px;
+    border: 2px solid whitesmoke;
+}
+div{
+    animation: dec1 2s 0.5s initial ease-in-out ;
+}
+.m2 {
+    padding: 30px;
+    color: whitesmoke;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 200px;
+    border-bottom: 1px solid whitesmoke;
+}
+  .m4{
+    padding: 30px;
+    color: whitesmoke;
+    width: 100%;
+    padding-left: 200px;
+  }
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover,a:focus {
+    color: darkgray;
+}
+@keyframes slide {
+    0%{
+        background-color: rgb(105, 117, 128);
+    }
+
+    33%{
+        background-color: rgb(49, 61, 71);
+    }
+    66%{
+        background-color: rgba(33, 41, 49, 0.769);
+    }
+    100%{
+        background-color: #686464;
+    }
+}
+
+@keyframes dec1 {
+    0%{
+        transform: scale(0);
+    }
+
+    66%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
