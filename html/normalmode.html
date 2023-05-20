@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="normalmode.css">
+  </head>
+  <body>
+    <!-- <div id="fooddispaly">RED BLUE YELLOW</div> -->
+    <section class="section1">
+      <h4>LEADER BOARD</h4>
+    <table>
+      <thead>
+        <tr>
+          <td id="frame1">RANK</td>
+          <td id="frame1">NAME</td>
+          <td id="frame1">SCORE</td>
+        </tr>
+      </thead>
+      <tbody id="leaderboard-body">
+
+      </tbody>
+    </table>
+    <label for="Name">NAME::</label>
+    <input id="name1" placeholder="Enter the Name" type="text">
+    <label for="score" >SCORE::</label>
+    <input id="score1" type="number" placeholder="enter the score" >
+    <button id="leader-btn" type="button">Submit</button>
+  </section>
+  <section>
+    <p id="display1"></p>
+    <div class="board">
+      <div class="game-details">
+        <span class="score">Score: 0</span>
+        <span id="time1">Time:: 1:00 sec</span>
+        <span class="high-score">High Score: 0</span>
+      </div>
+      <div class="play-board" ></div>
+      <div class="controls">
+       <i data-key="ArrowLeft">Left</i>
+       <i data-key="ArrowUp" >Top</i>
+       <i data-key="ArrowRight"  >Right</i>
+       <i data-key="ArrowDown" >Bottom</i>
+      </div>
+    </div>
+  </section>
+    <script src="normalmode.js"></script>
+  </body>
+</html>
+
+

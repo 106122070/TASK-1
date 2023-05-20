@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="hackermode.css">
+  </head>
+  <body>
+    <section id="b1">
+      <label id="grid1" for="password">Grid Size:: </label>
+      <input id="gridsize1" type="number" placeholder="Grid Size" max="30" min="20">
+      <button id="grid-button" type="button">APPLY</button>
+    <div id="pauseScreen"><p>Game Paused</p></div>
+    <button  id="pause1" type="button" >PAUSE</button>
+  </section>
+    <section id="b2">
+    <div class= "life1">
+        LIFE :: &#128147  &#128147  &#128147
+    </div>
+    <div class="board" id="bo1">
+        <div class="game-details">
+            <span class="score">Score: 0</span>
+            <span id="time1">Time:: 1:00 sec</span>
+            <span class="high-score">High Score: 0</span>
+        </div>    
+      <div id="play-board"></div>
+      <div class="controls">
+       <i data-key="ArrowLeft">Left</i>
+       <i data-key="ArrowUp" >Top</i>
+       <i data-key="ArrowRight"  >Right</i>
+       <i data-key="ArrowDown" >Bottom</i>
+      </div>
+    </div>
+    </section>
+    <script src="hackermode.js" defer></script>
+    <audio id="snakesound" src="newsnakesound.mp3">
+    </audio>
+  </body>
+</html>
+
+

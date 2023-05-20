@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+  }
+  body {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vmin;
+    background:#59606e;
+    animation: slide 5s 0.4s ease-in-out infinite forwards;
+  }
+
+.board {
+    width: 80vmin;
+    height: 80vmin;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    border-radius: 5px;
+    background: #293447;
+    box-shadow:0px 20px 40px rgba(248, 248, 248, 0.2);
+  }
+  .h1{
+    font-size: 30px;
+    padding:10px 20px;
+  }
+  p{
+    font-size: 30px;
+    color:whitesmoke;
+    padding-left: 150px;
+    padding-bottom: 20px;
+    display: flex;
+    width:100%;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+#frame1{
+  margin-top: 100px;
+  padding: 30px;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+  .game-details {
+    color:whitesmoke;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .play-board {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    background:#212837 ;
+    grid-template: repeat(25, 1fr) / repeat(25, 1fr);
+  }
+
+   .play-board #food {
+    background: #a32a46;
+    border: 1px solid whitesmoke;
+  }
+   .play-board #food1 {
+    background: blue;
+    border: 1px solid whitesmoke;
+  }
+   .play-board #food2 {
+    background: yellowgreen;
+    border: 1px solid whitesmoke;
+  }
+  .play-board .head {
+    background:rgba(27, 27, 173, 0.815);
+    border: 1px solid whitesmoke;
+    border-radius: 2px solid blue;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+  }
+  label{
+    display: flex;
+    flex-flow: column;
+    color:whitesmoke;
+    padding-top: 30px;
+    margin-left: 30px;
+  }
+  input{
+    /* margin-top: 100px; */
+    color:black;
+    margin-left: 70px;
+  padding-top: 0px;    
+  }
+  section{
+    width :30%;
+    margin-top: 10px;
+    padding: 10px;
+    padding-right: 0px;
+    justify-content: space-between;
+  }
+  .section1{
+    border: 2px solid#212837;
+    border-radius: 50px;
+    margin-right: 150px;
+  }
+  
+  h4{
+    color: whitesmoke;
+    font-size: 30px;
+    padding-left:60px ;
+  }
+  tr{
+    color: aliceblue;
+  }
+  td{
+      padding-left: 30px;
+  }
+  
+  button{
+    font-size: 20px;
+    color: whitesmoke;
+    background-color:#293447;
+    margin-top: 20px;
+    padding: 10px 23px;
+    border:1px solid #a1a6b3;
+    margin-left: 80px;
+  }
+
+  .controls i {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.3rem;
+    color: whitesmoke;
+    width: 25%;
+    cursor: pointer;
+    background-color: #1c1c1f;
+    border-right: 1px solid #a1a6b3;
+  }
+
+
+    @keyframes slide {
+        0%{
+            background-color: rgb(105, 117, 128);
+        }
+    
+        33%{
+            background-color: rgb(49, 61, 71);
+        }
+        66%{
+            background-color: rgba(33, 41, 49, 0.769);
+        }
+        100%{
+            background-color: #686464;
+        }
+        
+    }
